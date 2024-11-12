@@ -1,0 +1,190 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8E7;
+    color: #6D4C41;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar a {
+    color: #fbf6ea;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.judulnav {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.navbar a:hover {
+    background-color: #AAF0D1;
+    color: #6D4C41;
+}
+
+.hero {
+    background-image: url('foto/VanillaBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    color: #eb486e;
+    font-size: 5em;
+}
+
+.herodalam {
+    padding-top: 6%;
+    height: 50vh;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    max-width: 800px;
+}
+
+#home {
+    margin-top: 50px;
+    height: 25ch;
+    align-content: center;
+    font-size: larger;
+    background-color: #f0c4b5;
+    border-radius: 15px;
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.content1 {
+    height: 40ch;
+    max-width: 800px;
+}
+
+.content2 {
+    padding: 40px;
+    background-color: #AAF0D1;
+    border-radius: 15px;
+    max-width: 800px;
+}
+
+.content3 {
+    margin-top: 30xp;
+    padding: 40px;
+    background-color: #f0c4b5;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.section {
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.carousel .carousel-inner .carousel-item .product {
+    margin: 20px auto;
+    padding: 20px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 50%;
+    background-color: white;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: black;
+}
+
+#contact-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #AAF0D1;
+    padding: 20px;
+    text-align: center;
+    color: #6D4C41;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .carousel .carousel-inner .carousel-item .product {
+        width: 75%;
+    }
+
+    .judulnav {
+        font-size: 22px;
+    }
+
+    .navbar a {
+        font-size: medium;
+    }
+
+    .content1, .content2, .content3, #contact-us {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .carousel .carousel-inner .carousel-item .product {
+        width: 90%;
+    }
+
+    .judulnav {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        font-size: small;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    #contact-us, .content1, .content2, .content3 {
+        padding: 15px;
+    }
+}
